@@ -1,0 +1,142 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #000;
+    color: #FFD700;
+    text-align: center;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #111;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+}
+
+/* Hero (Imagem + Serviços lado a lado) */
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+}
+
+.hero-image {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.05);
+}
+
+/* Serviços */
+.services {
+    text-align: left;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.services-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.4em;
+}
+
+.services-list li {
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.services-list li:hover {
+    color: #e6c200;
+    transform: translateX(8px);
+}
+
+/* Sobre */
+.about {
+    padding: 60px 20px;
+    background-color: #111;
+}
+
+.about h2 {
+    font-size: 2.4em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.3em;
+    line-height: 1.8;
+}
+
+/* Contato */
+.contact {
+    padding: 60px 20px;
+}
+
+.contact h2 {
+    font-size: 2.4em;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #FFD700;
+    color: #000;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn i {
+    font-size: 1.5em;
+}
+
+.btn:hover {
+    background-color: #e6c200;
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+.footer {
+    padding: 30px 20px;
+    background-color: #111;
+    font-size: 1em;
+}
